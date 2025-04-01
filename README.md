@@ -7,7 +7,7 @@ This project focuses on understanding how inventory is performing across a retai
 All insights are presented through a **fully interactive Tableau dashboard**, making it easy for inventory managers and buyers to make informed, data-backed decisions.
 
 ---
-### 📊 Dashboard Image and Tableau Public Link [🔗](https://public.tableau.com/app/profile/vedant.shinde2971/viz/Tableau_17434692686900/Dashboard)
+### 📰 Dashboard Image and Tableau Public Link [🔗](https://public.tableau.com/app/profile/vedant.shinde2971/viz/Tableau_17434692686900/Dashboard)
 ![Inventory Dashboard](Dashboard.png)
 
 ---
@@ -87,6 +87,7 @@ This dashboard and analysis are built for:
 
 ## 📁 Files Included
 
+- `Inventory_Analytics_Unclean.csv` – Uncleaned dataset  
 - `inventory.csv` – Cleaned dataset  
 - `Inventory_KPI.csv` – Calculated metrics summary  
 - `Dashboard.png` – Screenshot of Tableau dashboard  
