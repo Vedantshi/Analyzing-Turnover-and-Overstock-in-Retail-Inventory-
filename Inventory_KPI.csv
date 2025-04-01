@@ -1,0 +1,16 @@
+item_type,year,inventory_turnover,days_inventory_on_hand,units_sold,avg_inventory_value,revenue_per_unit,stock_status,item_code
+Beer,2022,0.74,493.2,16,4232.18,10.95,Healthy,SKU10010
+Beer,2023,0.75,486.7,13,2897.92,10.24,Healthy,SKU10047
+Beer,2024,0.72,506.9,18,2916.26,12.99,Healthy,SKU10028
+Cider,2022,0.71,514.1,15,1704.98,6.52,Healthy,SKU10005
+Cider,2023,0.76,480.3,12,3763.74,8.94,Healthy,SKU1007
+Cider,2024,0.73,500.0,7,1515.24,6.21,Overstock Risk,SKU1003
+Mixer,2022,0.73,500.0,29,898.22,6.99,Healthy,SKU10016
+Mixer,2023,0.73,500.0,27,1373.75,3.14,Healthy,SKU10004
+Mixer,2024,0.75,486.7,15,798.00,5.70,Healthy,SKU10002
+Spirits,2022,0.75,486.7,29,17036.29,52.99,Healthy,SKU10003
+Spirits,2023,0.75,486.7,8,16115.97,39.99,Overstock Risk,SKU10008
+Spirits,2024,0.73,500.0,16,9351.52,32.87,Healthy,SKU10000
+Wine,2022,0.74,493.2,15,4038.34,21.77,Healthy,SKU10023
+Wine,2023,0.73,500.0,28,2832.34,22.39,Healthy,SKU10012
+Wine,2024,0.75,486.7,13,7639.49,23.47,Healthy,SKU1000
