@@ -1,107 +1,90 @@
 # Shelf Life: Analyzing Turnover & Overstock Risk in Retail Inventory
 
-### 📌 Project Summary
-
-This project focuses on understanding how inventory is performing across a retail operation with over **$2.7M in stock**. Using a dataset of **44,000+ records**, I explored inventory turnover, flagged underperforming SKUs, and identified where stock was sitting too long without moving. The goal was to help the business reduce overstock costs while maintaining product availability.
-
-All insights are presented through a **fully interactive Tableau dashboard**, making it easy for inventory managers and buyers to make informed, data-backed decisions.
+**Tools:** SQL · Excel · Tableau &nbsp;|&nbsp; **Dataset:** 44,000+ records &nbsp;|&nbsp; **Stock Value Analyzed:** $2.7M+
 
 ---
-### 📰 Dashboard Image and Tableau Public Link [🔗](https://public.tableau.com/app/profile/vedant.shinde2971/viz/Tableau_17434692686900/Dashboard)
+
+## Overview
+
+This project analyzes inventory performance across a retail operation to identify slow-moving SKUs, quantify overstock risk, and surface actionable insights for buyers and inventory managers. Using a 44,000-row dataset, I cleaned raw data, engineered KPIs in SQL, and built a fully interactive Tableau dashboard to support markdown, delisting, and restocking decisions.
+
+**[View Live Dashboard on Tableau Public →](https://public.tableau.com/app/profile/vedant.shinde2971/viz/Tableau_17434692686900/Dashboard)**
+
 ![Inventory Dashboard](Dashboard.png)
 
 ---
 
-## 🎯 Objective
+## Objective
 
-Help retail teams manage inventory more efficiently by identifying slow-moving items, monitoring supplier performance, and improving overall turnover using key metrics.
-
----
-
-## 🔍 Key Questions
-
-- Are we holding too much inventory that isn’t selling?
-- Which products have the highest Days Inventory Outstanding (DIO)?
-- Where are we losing money due to idle stock?
-- Are there patterns by category or supplier?
+Equip retail inventory teams with a clear, data-driven view of stock health — reducing overstock costs while maintaining product availability across categories and suppliers.
 
 ---
 
-## 📊 KPIs Included
+## Key Questions
 
-- Inventory Turnover Ratio  
-- Days Inventory on Hand (DIO)  
-- Revenue per Unit  
-- Units Sold  
-- Average Inventory Value  
-- Stock Status (e.g., Overstock Risk vs. Healthy)
+- Which SKUs have been sitting longest without moving?
+- Where is the business losing working capital to idle stock?
+- Are overstock patterns concentrated in specific categories or suppliers?
+- How does inventory turnover vary across product types?
 
 ---
 
-## 🛠️ Tools Used
+## KPIs Tracked
 
-- **SQL** – Data prep, cleaning, and KPI calculations  
-- **Excel** – Initial exploration and basic cleaning  
-- **Tableau** – Final dashboard and visualizations  
-- **Regex in SQL** – To validate formatting of numeric fields  
-
----
-
-## 🧪 What I Worked On
-
-### Data Cleaning & Prep in Excel
-- Cleaned and standardized a 44,000-row dataset  
-- Fixed over **1,000+ missing or inconsistent values**  
-- Normalized fields like `item_type` and `supplier` for consistency
-
-### KPI Calculation in SQL  
-- Calculated inventory turnover, DIO, units sold, and more  
-- Identified SKUs with over **500+ days of holding time**  
-- Flagged over **$180K** in idle inventory at risk of becoming dead stock
-
-### Dashboard Design in Tableau  
-- Built bar charts, line charts, and category-level breakdowns  
-- Added filters for year and product type for better usability  
-- Included status flags to highlight high-risk inventory
+| Metric | Description |
+|---|---|
+| Inventory Turnover Ratio | How often stock is sold and replaced over a period |
+| Days Inventory Outstanding (DIO) | Average days a unit sits before selling |
+| Revenue per Unit | Effective yield per SKU |
+| Average Inventory Value | Capital tied up in stock at any point |
+| Stock Status | Overstock Risk vs. Healthy classification per SKU |
 
 ---
 
-## 👤 Intended Users
+## Process
 
-This dashboard and analysis are built for:
-- Inventory & Supply Chain Managers  
-- Category Buyers  
-- Merchandising Teams  
-- Finance Analysts tracking working capital
+### 1. Data Cleaning — Excel
+- Standardized a 44,000-row raw dataset, resolving 1,000+ missing or inconsistent values
+- Normalized categorical fields (`item_type`, `supplier`) for reliable grouping downstream
 
----
+### 2. KPI Engineering — SQL
+- Calculated inventory turnover, DIO, units sold, and revenue per unit at the SKU level
+- Used regex validation to clean and verify numeric field formatting
+- Flagged SKUs with 500+ days of holding time and identified **$180K+ in idle inventory** at dead stock risk
 
-## ✅ Key Results
-
-- Highlighted slow-moving SKUs and stockpiled items
-- Helped surface over **$180K+ in excess inventory**
-- Provided a clear view of inventory efficiency by category and supplier
-- Created a tool to support markdowns, delisting, or restocking decisions
+### 3. Dashboard — Tableau
+- Built category- and supplier-level breakdowns using bar charts, line charts, and status flags
+- Added year and product type filters for self-serve exploration by inventory managers and buyers
 
 ---
 
-## 📁 Files Included
+## Results
 
-- `Inventory_Analytics_Unclean.csv` – Uncleaned dataset  
-- `inventory.csv` – Cleaned dataset  
-- `Inventory_KPI.csv` – Calculated metrics summary  
-- `Dashboard.png` – Screenshot of Tableau dashboard  
-- `Tableau.twb` – Tableau workbook  
-- `Project Objectives.docx` – Full scope and goals of the project  
+- Surfaced **$180K+ in excess inventory** at risk of becoming dead stock
+- Identified high-DIO SKUs enabling targeted markdown and delisting decisions
+- Delivered a reusable dashboard for ongoing inventory health monitoring across categories and suppliers
 
 ---
 
-## 📎 Dataset Source
+## Intended Users
 
-[Warehouse and Retail Sales – Data.gov](https://catalog.data.gov/dataset/warehouse-and-retail-sales)
+Inventory & Supply Chain Managers · Category Buyers · Merchandising Teams · Finance Analysts
 
 ---
 
-## 💡 About This Project
+## Repository Contents
 
-This project was built as a hands-on way to apply data analytics skills to a real-world retail inventory scenario. It combines business thinking with technical execution, showing how data can directly inform operational decisions in retail environments.
+| File | Description |
+|---|---|
+| `Inventory_Analytics_Unclean.csv` | Raw source dataset |
+| `inventory.csv` | Cleaned dataset |
+| `Inventory_KPI.csv` | Calculated KPI summary |
+| `Dashboard.png` | Tableau dashboard screenshot |
+| `Tableau.twb` | Tableau workbook |
+| `Project Objectives.docx` | Full project scope and goals |
+
+---
+
+## Data Source
+
+[Warehouse and Retail Sales — Data.gov](https://catalog.data.gov/dataset/warehouse-and-retail-sales)
